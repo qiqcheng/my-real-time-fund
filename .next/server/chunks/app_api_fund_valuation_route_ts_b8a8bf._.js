@@ -4,11 +4,13 @@ module.exports = {
 "use strict";
 
 __turbopack_esm__({
-    "GET": ()=>GET
+    "GET": ()=>GET,
+    "dynamic": ()=>dynamic
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/server.js [app-route] (ecmascript)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 ;
+const dynamic = 'force-dynamic';
 async function GET(request) {
     const searchParams = request.nextUrl.searchParams;
     const code = searchParams.get('code');
